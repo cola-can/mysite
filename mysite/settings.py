@@ -80,8 +80,8 @@ DATABASES = {
         'NAME': 'colacan$projectdb', # os.path.join(BASE_DIR, 'db.sqlite3'),
         'USER': 'colacan',
         'PASSWORD': 'j123456789',
-        'HOST': '127.0.0.1',
-        'PORT': 'colacan.mysql.pythonanywhere-services.com',
+        'HOST': 'colacan.mysql.pythonanywhere-services.com',
+        # 'PORT': 'colacan.mysql.pythonanywhere-services.com',
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
