@@ -76,14 +76,20 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # 'django.db.backends.sqlite3',
-        'NAME': 'colacan$projectdb', # os.path.join(BASE_DIR, 'db.sqlite3'),
+        # Local
+        #'ENGINE': 'django.db.backends.mysql', # 'django.db.backends.sqlite3',
+        #'NAME': 'projectdb', # os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'USER': 'root',
+        #'PASSWORD': '123456789',
+        #'HOST': '127.0.0.1',
+        #'PORT': '3306',
+        
+        # Pythonanywhere
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'colacan$projectdb',
         'USER': 'colacan',
         'PASSWORD': 'j123456789',
         'HOST': 'colacan.mysql.pythonanywhere-services.com',
-        # 'PORT': 'colacan.mysql.pythonanywhere-services.com',
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
